@@ -1,4 +1,8 @@
-*{
-    margin: 0px;
-    padding: 0px;
+.text{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 24px;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
 }
