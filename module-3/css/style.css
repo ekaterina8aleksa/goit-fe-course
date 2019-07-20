@@ -6,13 +6,11 @@ html{
 *::after{
     box-sizing: inherit;
 }
-.container{
+.wrapper{
     width: 960px;
     margin: 0 auto;
     background-color: rgb(238, 229, 198);
 }
-
-
 .text{
     font-size: 14px;
     font-weight: 400;
@@ -39,19 +37,18 @@ input[type="radio"].visually-hidden{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.textup{
-    text-transform: uppercase;
-}
-.ubuntufont{
+
+img + p {
     font-size: 14px;
     font-weight: 300;
     line-height: 17px;
+    text-transform: uppercase;
     font-family: 'Ubuntu', 'Arial', sans-serif;
     
 }
-.title{
+h2 {
     font-size: 30px;
 }
-.blog-navigation li{
+ul li{
     list-style-type: none;
 }
