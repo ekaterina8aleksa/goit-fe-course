@@ -1,3 +1,18 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+    background-color: rgb(238, 229, 198);
+}
+
+
 .text{
     font-size: 14px;
     font-weight: 400;
@@ -5,7 +20,38 @@
     text-decoration: none;
     line-height: 24px;
     font-family: 'Playfair Display', 'Times New Roman', serif;
+    color:rgb(62, 62, 62)
 }
 .link:hover {
-    color: red;
+    color: rgb(3, 169, 244);
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width:1px;
+    height:1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.textup{
+    text-transform: uppercase;
+}
+.ubuntufont{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    
+}
+.title{
+    font-size: 30px;
+}
+.blog-navigation li{
+    list-style-type: none;
 }
