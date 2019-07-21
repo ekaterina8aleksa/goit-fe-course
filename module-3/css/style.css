@@ -58,6 +58,7 @@ img + p {
   line-height: 17px;
   text-transform: uppercase;
   font-family: "Ubuntu", "Arial", sans-serif;
+  color: hsl(40, 12, 71)
 }
 h2 {
   font-size: 30px;
