@@ -41,6 +41,7 @@ input[type="radio"].visually-hidden {
     list-style-type: none;
     display: inline-block;
     text-transform: uppercase;
+    text-align: center;
   }
   .site-navigation li:not(:last-child){
       margin-right: 110px;
