@@ -1,54 +1,94 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
-    box-sizing: inherit;
+*::after {
+  box-sizing: inherit;
 }
-.wrapper{
-    width: 960px;
-    margin: 0 auto;
-    background-color: rgb(238, 229, 198);
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 30px;
+
 }
-.text{
-    font-size: 14px;
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 24px;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  color: rgb(62, 62, 62);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.site-navigation li {
+    list-style-type: none;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .site-navigation li:not(:last-child){
+      margin-right: 110px;
+  }
+  .link:hover {
+    color: rgb(3, 169, 244);
+  }
+img + p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-family: "Ubuntu", "Arial", sans-serif;
+}
+h2 {
+  font-size: 30px;
+}
+.site-navigation{
+    width: 970px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.blog-card {
+    display: inline-block;
+    width: 420px;
+    margin-right: 40px;
+    margin-bottom: 135px;
+    padding: 0px;
+}
+h2 + p {
+    width:420px;
+}
+.newbutton{
+    display: block;
+    font-size: 20px;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     line-height: 24px;
-    font-family: 'Playfair Display', 'Times New Roman', serif;
-    color:rgb(62, 62, 62)
-}
-.link:hover {
-    color: rgb(3, 169, 244);
-}
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden{
-    position: absolute;
-    width:1px;
-    height:1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-img + p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 17px;
-    text-transform: uppercase;
-    font-family: 'Ubuntu', 'Arial', sans-serif;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    color: rgb(62, 62, 62);
+    border: 1px solid;
+    border-color:  rgb(62, 62, 62);
+    padding: 20px 35px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
     
-}
-h2 {
-    font-size: 30px;
-}
-ul li{
-    list-style-type: none;
+
 }
