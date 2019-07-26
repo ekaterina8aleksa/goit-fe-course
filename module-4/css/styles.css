@@ -57,7 +57,7 @@ h4 {
 /*Header*/
 
 header {
-  padding: 43 0 0 0 px;
+  padding: 43px 0px 0px 0px;
   margin-bottom: 70px;
 }
 a {
@@ -144,7 +144,7 @@ h2::after {
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
-  text-transform: 700px;
+  text-transform: uppercase;
   color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.44);
 }
@@ -180,9 +180,11 @@ h4::after {
   height: 2px;
   background-color: rgb(26, 188, 156);
   content: "";
-  margin: 10px, 180px 20px, 0px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-right: 180px;
+  margin-bottom:20px; 
+  margin-left: 0px;
+
 }
 p {
   font-size: 14px;
