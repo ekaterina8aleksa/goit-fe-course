@@ -55,11 +55,13 @@ header {
 }
 a {
   text-decoration: none;
-
+}
+h1>a {
+  color: rgb(85, 82, 82);
 }
 .logo {
   float: left;
-  color: rgb(85, 82, 82);
+  
 }
 .logo::first-letter {
   color: rgb(26, 188, 156);
