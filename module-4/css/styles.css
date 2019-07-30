@@ -72,7 +72,7 @@ section {
   margin-bottom: 70px;
 }
 .menu-nav {
-  width: auto;
+
   list-style: none;
   float: right;
   margin-top: 20px;
@@ -118,11 +118,9 @@ h2::after {
   margin-bottom: 30px;
   float: left;
   width: 255px;
-  height: auto;
   padding: 0px;
 }
 .item-info {
-  width: auto;
   height: 40px;
   background-color: rgb(50, 50, 50);
 }
@@ -165,7 +163,6 @@ h2::after {
 }
 .news-card {
   width: 350px;
-  height: auto;
   padding: 0;
   float: left;
 }
