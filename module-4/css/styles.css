@@ -114,6 +114,9 @@ h2::after {
   width: 255px;
   padding: 0px;
 }
+.catalog-item img{
+  background-color: rgb(232, 239, 252);
+}
 .item-info {
   height: 40px;
   background-color: rgb(50, 50, 50);
@@ -146,7 +149,7 @@ h2::after {
   background-color: rgb(25, 188, 155);
 }
 .bcg-img {
-  background-color: rgb(232, 239, 252);
+  
 }
 /* news*/
 
