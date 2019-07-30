@@ -39,13 +39,9 @@ h2 {
 }
 
 h3 {
-  
   font-size: 18px;
   line-height: 40px;
- 
 }
-
-
 
 /*Header*/
 
@@ -56,12 +52,11 @@ header {
 a {
   text-decoration: none;
 }
-h1>a {
+h1 > a {
   color: rgb(85, 82, 82);
 }
 .logo {
   float: left;
-  
 }
 .logo::first-letter {
   color: rgb(26, 188, 156);
@@ -72,7 +67,6 @@ section {
   margin-bottom: 70px;
 }
 .menu-nav {
-
   list-style: none;
   float: right;
   margin-top: 20px;
@@ -151,8 +145,8 @@ h2::after {
 .catalog-item:hover .item-info {
   background-color: rgb(25, 188, 155);
 }
-.bcg-img{
-  background-color:rgb(232,239,252);
+.bcg-img {
+  background-color: rgb(232, 239, 252);
 }
 /* news*/
 
@@ -169,7 +163,7 @@ h2::after {
 .news-card:not(:last-child) {
   margin-right: 30px;
 }
-.small-title{
+.small-title {
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
@@ -184,9 +178,8 @@ h2::after {
   content: "";
   margin-top: 10px;
   margin-right: 180px;
-  margin-bottom:20px; 
+  margin-bottom: 20px;
   margin-left: 0px;
-
 }
 p {
   font-size: 14px;
@@ -215,4 +208,3 @@ p {
   text-align: center;
   line-height: 48px;
 }
-
