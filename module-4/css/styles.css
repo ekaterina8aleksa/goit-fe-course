@@ -24,7 +24,7 @@ h1 {
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
-  color: rgb(85, 82, 82);
+
   font-weight: 300;
 }
 
@@ -55,9 +55,11 @@ header {
 }
 a {
   text-decoration: none;
+
 }
 .logo {
   float: left;
+  color: rgb(85, 82, 82);
 }
 .logo::first-letter {
   color: rgb(26, 188, 156);
