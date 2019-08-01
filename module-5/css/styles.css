@@ -1,0 +1,22 @@
+html {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  .wrapper {
+    margin: 0 auto;
+    width: 1110px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+  }
+  .clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+  }

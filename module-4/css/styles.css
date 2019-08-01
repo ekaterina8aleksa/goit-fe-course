@@ -113,8 +113,10 @@ h2::after {
   float: left;
   width: 255px;
   padding: 0px;
+  
 }
 .catalog-item img{
+  display: block;
   background-color: rgb(232, 239, 252);
 }
 .item-info {
