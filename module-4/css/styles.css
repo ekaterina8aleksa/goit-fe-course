@@ -24,7 +24,6 @@ h1 {
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
-
   font-weight: 300;
 }
 
@@ -150,9 +149,7 @@ h2::after {
 .catalog-item:hover .item-info {
   background-color: rgb(25, 188, 155);
 }
-.bcg-img {
-  
-}
+
 /* news*/
 
 .news-list {
