@@ -7,6 +7,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,500,700,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -28,9 +32,26 @@
       <section>
         <div class="slider">
           <div class="overlay-slider">
-            <h2 class="slider-title">affotdable paris tours</h2>
-            <p class="slider-text"> city tours / tour tickets / tour guides </p>
+            <button class="slider-ctrl slider-btn-prev" type="button">
+              <i class="pe-7s-angle-left"></i>
+            </button>
+            <button class="slider-ctrl slider-btn-next" type="button">
+              <i class="pe-7s-angle-right"></i>
+            </button>
+            <div class="slides-info">
+              <h2 class="slider-title">affotdable paris tours</h2>
+              <p class="slider-text">city tours / tour tickets / tour guides</p>
+            </div>
           </div>
+          <ul class="slides">
+            <li class="slides-item">
+              <img
+                class="slides-image"
+                src="./img/slide4.jpg"
+                alt="laughing girls"
+              />
+            </li>
+          </ul>
         </div>
       </section>
       <section>
@@ -38,111 +59,100 @@
           <h3>new collection</h3>
           <ul class=" catalog-list clearfix">
             <li class="catalog-item">
-              <div class="overlay-catalog-item">
-                <div>
-                  <ul class="icon-list">
-                    <li class="icon-item"></li>
-                    <li class="icon-item"></li>
-                    <li class="icon-item"></li>
-                  </ul>
-                </div>
-                <div class="block-buy">
-                  <p class="icon-buy"></p>
-                  <p class="text-buy">add to cart</p>
-                </div>
-              </div>
-              <a href="#">
-                <img
-                  src="./img/category-2.jpg"
-                  alt="blue tshirt"
-                  width="255"
-                  height="284"
-                />
-              </a>
-              <div class="item-info clearfix">
-                <h4 class="item-name">blue tshirt</h4>
-                <p class="item-price">$26</p>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <div class="overlay-catalog-item">
-                <div>
-                  <ul class="icon-list">
-                    <li class="icon-item"></li>
-                    <li class="icon-item"></li>
-                    <li class="icon-item"></li>
-                  </ul>
-                </div>
-                <div class="block-buy">
-                  <p class="icon-buy"></p>
-                  <p class="text-buy">add to cart</p>
-                </div>
-              </div>
-              <a href="#">
-                <img
-                  src="./img/category-1.jpg"
-                  alt="woman shirt"
-                  width="255"
-                  height="284"
-                />
-              </a>
-              <div class="item-info clearfix">
-                <h4 class="item-name">woman shirt</h4>
-                <p class="item-price">$31</p>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <div class="overlay-catalog-item">
-                <div>
-                  <ul class="icon-list">
+              <div class="overlay-block">
+                <div class="overlay-catalog-item">
+                  <ul class="icon-list clearfix">
                     <li class="icon-item"><i class="pe-7s-like"></i></li>
                     <li class="icon-item"><i class="pe-7s-shuffle"></i></li>
                     <li class="icon-item"><i class="pe-7s-clock"></i></li>
                   </ul>
                 </div>
                 <div class="block-buy clearfix">
-                  <p class="icon-buy"></p>
+                  <p class="icon-buy"><i class="pe-7s-cart"></i></p>
                   <p class="text-buy">add to cart</p>
                 </div>
+                <img
+                  src="./img/category-2.jpg"
+                  alt="blue tshirt"
+                  width="255"
+                  height="284"
+                />
               </div>
-              <a href="#">
+              <div class="item-info clearfix">
+                <h4 class="item-name">blue tshirt</h4>
+                <p class="item-price">$26</p>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <div class="overlay-block">
+                <div class="overlay-catalog-item">
+                  <ul class="icon-list clearfix">
+                    <li class="icon-item"><i class="pe-7s-like"></i></li>
+                    <li class="icon-item"><i class="pe-7s-shuffle"></i></li>
+                    <li class="icon-item"><i class="pe-7s-clock"></i></li>
+                  </ul>
+                  <div class="block-buy clearfix">
+                    <p class="icon-buy"><i class="pe-7s-cart"></i></p>
+                    <p class="text-buy">add to cart</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/category-1.jpg"
+                  alt="woman shirt"
+                  width="255"
+                  height="284"
+                />
+              </div>
+              <div class="item-info clearfix">
+                <h4 class="item-name">woman shirt</h4>
+                <p class="item-price">$31</p>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <div class="overlay-block">
+                <div class="overlay-catalog-item">
+                  <ul class="icon-list clearfix">
+                    <li class="icon-item"><i class="pe-7s-like"></i></li>
+                    <li class="icon-item"><i class="pe-7s-shuffle"></i></li>
+                    <li class="icon-item"><i class="pe-7s-clock"></i></li>
+                  </ul>
+                  <div class="block-buy clearfix">
+                    <p class="icon-buy"><i class="pe-7s-cart"></i></p>
+                    <p class="text-buy">add to cart</p>
+                  </div>
+                </div>
                 <img
                   src="./img/category-4.jpg"
                   alt="yellow shirt"
                   width="255"
                   height="284"
                 />
-              </a>
+              </div>
               <div class="item-info clearfix">
                 <h4 class="item-name">yellow shirt</h4>
                 <p class="item-price">$21</p>
               </div>
             </li>
-
             <li class="catalog-item">
-              <div class="overlay-catalog-item">
-                <div>
-                  <ul class="icon-list">
-                    <li class="icon-item"></li>
-                    <li class="icon-item"></li>
-                    <li class="icon-item"></li>
+              <div class="overlay-block">
+                <div class="overlay-catalog-item">
+                  <ul class="icon-list clearfix">
+                    <li class="icon-item"><i class="pe-7s-like"></i></li>
+                    <li class="icon-item"><i class="pe-7s-shuffle"></i></li>
+                    <li class="icon-item"><i class="pe-7s-clock"></i></li>
                   </ul>
+                  <div class="block-buy clearfix">
+                    <p class="icon-buy"><i class="pe-7s-cart"></i></p>
+                    <p class="text-buy">add to cart</p>
+                  </div>
                 </div>
-                <div class="block-buy">
-                  <p class="icon-buy"></p>
-                  <p class="text-buy">add to cart</p>
-                </div>
-              </div>
-              <a href="#">
                 <img
                   src="./img/category-3.jpg"
                   alt="cool lingerie"
                   width="255"
                   height="284"
                 />
-              </a>
+              </div>
               <div class="item-info clearfix">
                 <h4 class="item-name">cool lingerie</h4>
                 <p class="item-price">$56</p>
@@ -153,10 +163,12 @@
       </section>
     </main>
     <footer>
-      <p>
+      <div class="footer">
+      <p class="footer-text">
         All Rights Reserved © Dokan | Designed
         <a href="#" class="link">ThemenGraph</a>
       </p>
+    </div>
     </footer>
   </body>
 </html>
