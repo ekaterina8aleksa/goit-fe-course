@@ -149,9 +149,7 @@ h2::after {
 .catalog-item:hover .item-info {
   background-color: rgb(25, 188, 155);
 }
-
 /* news*/
-
 .news-list {
   padding: 0px;
   margin: 0px;
