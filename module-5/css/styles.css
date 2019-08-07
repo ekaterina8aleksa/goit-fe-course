@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 * {
   margin: 0px;
@@ -68,9 +68,7 @@ h1 > a {
   color: var(--color-mint);
   font-weight: 900;
 }
-section {
-  margin-bottom: 70px;
-}
+
 .menu-nav {
   list-style: none;
   float: right;
@@ -103,19 +101,25 @@ section {
 
 
 .slider {
-  width: 1600px;
-  height: 600px;
-  margin-bottom: 70px;
   position: relative;
+
+}
+.slider::before{
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.52 );
+  position: absolute;
+  display: block;
+  content: "";
+  z-index: 1;
+
 }
 .overlay-slider {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  
+
 }
 .slides {
   margin: 0;
@@ -123,23 +127,25 @@ section {
   list-style: none;
 }
 .slides-item {
-  position: absolute;
+  /* will be some code for several items in the list*/
 }
 .slides-info {
+  position: absolute;
   text-transform: uppercase;
   color: var(--color-white);
-  position: absolute;
-  top: 43%;
-  left: 47%;
   transform: translate(-50%, -50%);
   font-family: "Roboto", "Arial", sans-serif;
-  
+  z-index: 2;
+  top:43%;
+  left:47%
 }
 .slides-image {
   height: 600px;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
+
 .slider-title {
   font-weight: 900;
   font-size: 50px;
@@ -170,10 +176,10 @@ section {
   color: var(--color-white);
 }
 .slider-btn-prev {
-  left: 15%;
+  left: 9%;
 }
 .slider-btn-next {
-  right: 15%;
+  right: 9%;
 }
 .slider-btn-prev:hover {
   cursor: pointer;
@@ -189,7 +195,10 @@ section {
 
 /*catalog*/
 
-
+.catalog-background {
+  background-color:rgb(233,240,253);
+  padding: 70px;
+}
 h3::after {
   display: block;
   width: 165px;
@@ -213,8 +222,8 @@ h3::after {
 .catalog-item img {
   display: block;
   background-color: rgb(232, 239, 252);
-  width: 255px;
-  height: 284px;
+  width: 100%;
+  height: auto;
 }
 .item-info {
   height: 40px;
@@ -248,14 +257,13 @@ h3::after {
   background-color: var(--color-mint);
 }
 .overlay-block {
-  width: 255px;
-  height: 284px;
+  position: relative;
 }
 .overlay-catalog-item {
   position: absolute;
   top: 10px;
   right: 10px;
-  bottom: 50px;
+  bottom: 10px;
   left: 10px;
   border-width: 10px;
   /*width: 92%;
@@ -294,9 +302,6 @@ border-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
 .buy-btn {
-  position: absolute;
-  top: 135px;
-  left: 35px;
   width: 165px;
   height: 50px;
   border-style: solid;
@@ -354,14 +359,19 @@ border-color: rgba(255, 255, 255, 0.9);
 
 /*footer*/
 
-
-.footer-text {
+footer{
   background-color: var(--color-gray);
+}
+.footer-text {
+ 
   height: 85px;
   color: var(--color-white);
   text-align: center;
   line-height: 88px;
   font-size: 16px;
   font-family: "Open Sans", "Arial", sans-serif;
+}
+.footer-text a{
+  color: var(--color-mint);
 }
 
