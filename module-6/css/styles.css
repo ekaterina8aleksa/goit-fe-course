@@ -24,7 +24,20 @@ html {
   --font-montserrat: "Montserrat", "Arial", sans-serif;
   --font-kaushan: "Kaushan Script", "Arial", sans-serif;
 }
-
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*GENERAL*/
 
 main {
@@ -43,8 +56,8 @@ a {
   text-transform: uppercase;
   font-family: var(--font-montserrat);
   font-size: 30px;
-  font-weight: 700px;
-  line-height: auto;
+  font-weight: 700;
+  line-height: 42px;
   color: var(--color-dgray);
   text-align: center;
 }
@@ -70,7 +83,7 @@ a {
 .logo {
   display: flex;
   font-size: 30px;
-  line-height: auto;
+  line-height: 42px;
   font-weight: 700;
   font-family: var(--font-montserrat);
   color: var(--color-mint);
@@ -107,7 +120,7 @@ color:var(--color-mint);
 .menu-item a {
   font-size: 14px;
   font-weight: 400;
-  line-height: auto;
+  line-height: 24px;
   font-family: var(--font-montserrat);
   color: var(--color-mint);
   font-style: normal;
@@ -255,6 +268,9 @@ width:280px;
   display: flex;
   list-style: none;
   justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  
 }
 .team-item {
   display: flex;
@@ -262,12 +278,41 @@ width:280px;
   top: 0;
   left:0;
   flex-direction: column;
+  padding: 0;
+  align-items: center;
 }
 .team-item img{
   width: 380px;
   height: auto;
+display: block;
 position: relative;
 margin-bottom: 30px;
+}
+.team-item:hover .overlay-team-item{
+display: flex;
+position:absolute;
+align-items: center;
+justify-content: center;
+z-index: 1;
+transform: translate(-10px, -10px);
+transition: transforme 0.2s linear,
+            box-shadow 0.2s linear;
+background-image: linear-gradient(
+  to top,
+rgba(252,227,138,0.9) 0%,
+rgba(243,129,129,0.9) 100%
+);
+box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+cursor: pointer;
+}
+.team-item:hover .team-item img{
+  display: block;
+  position: relative;
+  transform: translate( -10px, -10px);
+  transition: transform 0.2s linear;
+}
+.team-item:hover .overlay-list-icons{
+  display: flex;
 }
 .team-name{
   text-align: center;
@@ -283,41 +328,64 @@ margin-bottom: 30px;
     text-align: center;
   
 }
-.overlay{
-display: block;
+.overlay-team{
+
 position: absolute;
 top:0;
+right: 0;
+bottom: 78px;
 left:0;
-width: 100%;
-height: 100%;
 
 }
 
+.overlay-team-item{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
-.overlay-list{
+}
+.overlay-list-icons{
   display: none;
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 225px;
-  height: 58px;
+  width: 238px;
+  height: 60px;
 }
-.overlay-item {
+.overlay-icon {
 display: flex;
 justify-content: center;
 align-items: center;
-width: 58px;
-height: 58px;
-z-index: 2;
+width: 57px;
+height: 57px;
+z-index: 100;
+background-color: var(--color-yellow);
+margin: 1px;
 
 }
-.overlay-item li{
-  margin-right: 1px;
-}
-.social-link{
+
+.overlay-list-icons a{
 color:var(--color-pink);
+background-repeat: no-repeat;
+background-position: center;
+
 }
-.overlay-item:hover{
+.icon-facebook{
+background-image: url(../img/facebook.png);
+}
+.icon-instagram{
+background-image: url(../img/instagram.png);
+}
+.icon-pinterest{
+background-image: url(../img/pinterest.png);
+}
+.icon-twitter{
+background-image: url(../img/twitter.png);
+}
+.overlay-icon:hover,
+.overlay-icon:focus{
   background-color: var(--color-mint);
 }
 /*FOOTER*/
@@ -329,11 +397,7 @@ color:var(--color-pink);
   justify-content: space-between;
  
 }
-.footer-wrap{
- display: flex;
-  justify-content: space-between;
-  
-}
+
 .footer-text{
 
 font-size: 14px;
@@ -359,6 +423,7 @@ border: none;
 }
 .footer-form{
   display: flex;
+  outline: 1px solid var(--color-lgray);
 }
 .footer-form input{
 color:var(--color-dgray);
@@ -369,9 +434,7 @@ font-weight: 300;
 font-style: italic;
 padding: 0px 140px 0px 10px;
 opacity: 0.5;
-
 border: none;
-outline: 1px solid var(--color-lgray);
 }
 footer::before {
   background-color: var(--color-lgray);
