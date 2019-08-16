@@ -40,9 +40,7 @@ input[type="radio"].visually-hidden {
 }
 /*GENERAL*/
 
-main {
-  flex-grow: 1;
-}
+
 .container {
   margin: 0 auto;
   width: 1210px;
@@ -360,13 +358,13 @@ justify-content: center;
 align-items: center;
 width: 57px;
 height: 57px;
-z-index: 100;
+z-index: 5;
 background-color: var(--color-yellow);
 margin: 1px;
 
 }
 
-.overlay-list-icons a{
+.overlay-list-icon a{
 color:var(--color-pink);
 background-repeat: no-repeat;
 background-position: center;
