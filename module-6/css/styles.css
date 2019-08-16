@@ -273,15 +273,12 @@ width:280px;
 .team-item {
   display: flex;
   position: relative;
-  top: 0;
-  left:0;
+
   flex-direction: column;
-  padding: 0;
-  align-items: center;
+  
 }
 .team-item img{
-  width: 380px;
-  height: auto;
+
 display: block;
 position: relative;
 margin-bottom: 30px;
@@ -293,14 +290,13 @@ align-items: center;
 justify-content: center;
 z-index: 1;
 transform: translate(-10px, -10px);
-transition: transforme 0.2s linear,
-            box-shadow 0.2s linear;
+transition: transforme 0.2s linear;
 background-image: linear-gradient(
   to top,
 rgba(252,227,138,0.9) 0%,
 rgba(243,129,129,0.9) 100%
 );
-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+
 cursor: pointer;
 }
 .team-item:hover .team-item img{
@@ -308,6 +304,8 @@ cursor: pointer;
   position: relative;
   transform: translate( -10px, -10px);
   transition: transform 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
 }
 .team-item:hover .overlay-list-icons{
   display: flex;
@@ -364,10 +362,12 @@ margin: 1px;
 
 }
 
-.overlay-list-icon a{
+.overlay-list-icon a {
 color:var(--color-pink);
 background-repeat: no-repeat;
 background-position: center;
+width: 100%;
+height: 100%;
 
 }
 .icon-facebook{
