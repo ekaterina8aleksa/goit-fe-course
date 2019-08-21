@@ -79,6 +79,7 @@ img{
   max-width: 100%;
 }
 
+
 /*HEADER*/
 
 .head-wrap {
@@ -341,7 +342,7 @@ box-shadow: 10px 10px var(--color-mint);
   height: 55px;
   background-color: var(--color-yellow);
   }
-.overlay-icon a {
+.overlay-list-icons a {
 color:var(--color-pink);
 background-repeat: no-repeat;
 background-position: center;
