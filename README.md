@@ -29,3 +29,9 @@ https://github.com/ekaterina8aleksa/goit-fe-course/tree/master/module-6
 
 рабочая 6
 https://ekaterina8aleksa.github.io/goit-fe-course/module-6/index.html
+
+файлы 7 
+https://github.com/ekaterina8aleksa/goit-fe-course/tree/master/module-7
+
+рабочая 7 
+https://ekaterina8aleksa.github.io/goit-fe-course/module-7/index.html
