@@ -43,7 +43,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   max-width: 940px;
   font-style: normal;
-  padding: 110px auto;
 }
 a {
   text-decoration: none;
@@ -183,7 +182,6 @@ span{
 .dark-form{
     background-color: var(--c-black);
     padding: 110px 0;
-    min-hight:700px;
     background-position: bottom 30% right 0%;
     background-repeat: no-repeat;
     background-image: url(../img/Map\ Image.png);
