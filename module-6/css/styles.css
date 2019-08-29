@@ -89,7 +89,7 @@ img{
   align-items: center;
 }
 .logo {
-  display: flex;
+  display: inline-block;
   font-size: 30px;
   line-height: 42px;
   font-weight: 700;
@@ -101,6 +101,7 @@ img{
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  width: 400px;
 }
 @keyframes logo-here{
   0%{
@@ -119,8 +120,9 @@ transform: rotate(360deg);
 color:var(--color-mint);
   }
 }
-.menu-item {
-  margin-right: 30px;
+.menu-item{
+  height: 20px;
+  /*margin-bottom: 20px;*/
 }
 .menu-item a {
   font-size: 14px;
@@ -132,8 +134,8 @@ color:var(--color-mint);
   text-transform: uppercase;
   text-decoration: none;
 }
-.menu-item:last-child {
-  margin-right: 0px;
+.menu-item:not(:nth-child(n+5)) {
+  margin-right: 30px;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -291,11 +293,7 @@ width:280px;
   margin-bottom: 40px;
   transition-duration: 0.2s;
 }
-.overlay-team:hover{
-  cursor: pointer;
-  transform: translate(-10px, -10px);
-  transition: 0.2s linear;
-}
+
 .overlay{
   position: absolute;
   display: flex;
@@ -316,7 +314,11 @@ opacity: 1;
 box-shadow: 10px 10px var(--color-mint);
 cursor: pointer;
 }
-
+.overlay-team:hover{
+  cursor: pointer;
+  transform: translate(-10px, -10px);
+  transition: 0.2s linear;
+}
   .overlay-team{
   top:0;
   right: 0;
@@ -331,15 +333,9 @@ cursor: pointer;
   }
   .overlay-list-icons{
     display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left:50%;
     cursor: pointer;
   }
   .overlay-icon {
-  align-items: center;
   width: 55px;
   height: 55px;
   background-color: var(--color-yellow);
