@@ -319,18 +319,6 @@ cursor: pointer;
   transform: translate(-10px, -10px);
   transition: 0.2s linear;
 }
-  .overlay-team{
-  top:0;
-  right: 0;
-  bottom: 78px;
-  left:0;
-  }
-  .overlay-team-item{
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
   .overlay-list-icons{
     display: flex;
     cursor: pointer;
