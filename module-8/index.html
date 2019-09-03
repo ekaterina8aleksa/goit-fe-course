@@ -2,84 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>/Module-8</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <!--HEADER-->
 
-    <header>
-      <div class="header-wrap">
+    <header class="visually-hidden"></header>
+
+    <!--INTRO-->
+
+    <main>
+      <section class="intro">
+        <div class="virtual-header">
         <h1 class="header-title"><a class="logo" href="#">URLAUBSGLÜCK</a></h1>
-        <button class="log-in">Log in</button>
-        <button class="sign-up">Sign up</button>
-    </div>
-</header>
-<main>
-
-<!--INTRO-->
-
-    <section>
-        <div class="wrapper">
-        <h2 class="title">Share your holiday dreams</h2>
-        <p class="text">And find the perfect partner to fullfill it</p>
-        <a href="#" class="holiday-partner">Find your holiday partner</a>
-    </div>
-    </section>
+        <div class="wrap">
+          <button type="submit">Log in</button>
+          <button class="sign-up" type="submit">Sign up</button>
+        </div>
+      </div>
+        <div class="container">
+          <h2 class="title">Share your holiday dreams</h2>
+          <p class="text">And find the perfect partner to fullfill it</p>
+          <a href="#" class="holiday-partner">Find your holiday partner</a>
+        </div>
+      </section>
 
       <!--PROFILES-->
 
       <section>
-      <div class="container">
-        <h2>Meet a partner for your best holiday</h2>
-        <ul class="profile-list">
-          <li class="profile-item">
-            <div>
-              <img src="./img/avatar1.png" alt="man" />
-              <span></span>
-            </div>
+        <div class="container profile">
+          <h2 class="profile-title">Meet a partner for your best holiday</h2>
+          <ul class="profile-list">
+            <li class="profile-item">
+              <div class="avatar icon-tv">
+                <img src="./img/avatar1.png" alt="man" 
+                width="120"
+                height="120"/>
+              </div>
               <h3 class="name-title">Bradley Hunter</h3>
               <p class="info">
                 Based in Chicago. I love playing tennis and loud music.
               </p>
-          </li>
-          <li class="profile-item">
-            <div>
-              <img src="./img/avatar2.png" alt="man" />
-              <span></span>
-            </div>
+            </li>
+            <li class="profile-item">
+              <div class="avatar icon-tube">
+                <img src="./img/avatar2.png" alt="man" 
+                width="120"
+                height="120"/>
+              </div>
               <h3 class="name-title">Lucas Marsha</h3>
               <p class="info">
                 I get my inspiration from nature and objects around me. I have a
                 passion to colours, typography and skatesboards.
               </p>
-          </li>
-          <li class="profile-item">
-            <div>
-              <img src="./img/avatar3.png" alt="girl" />
-              <span></span>
-            </div>
+            </li>
+            <li class="profile-item">
+              <div class="avatar icon-cup">
+                <img src="./img/avatar3.png" alt="woman" 
+                width="120"
+                height="120"/>
+              </div>
               <h3 class="name-title">Heather Walker</h3>
               <p class="info">
                 I'm a happy person that loves cats and climbing on mountains.
               </p>
-          </li>
-          <li class="profile-item">
-            <div>
-              <img src="./img/avatar4.png" alt="girl" />
-              <span></span>
-            </div>
+            </li>
+            <li class="profile-item">
+              <div class="avatar icon-plane">
+                <img src="./img/avatar4.png" alt="woman" 
+                width="120"
+                height="120"/>
+              </div>
               <h3 class="name-title">Bradley Hunter</h3>
               <p class="info">
                 Based in Chicago. I love playing tennis and loud music.
               </p>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        <a href="#" class="other-partner">See other partners</a>
       </div>
-      <a href="#" class="other-partner">See other partners</a>
-    </section>
+      </section>
     </main>
 
     <!--FOOTER-->

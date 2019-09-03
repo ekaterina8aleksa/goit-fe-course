@@ -1,0 +1,31 @@
+@media (min-width 768px) {
+  .intro{
+    background-image: url(../img/picture-tab.png);
+    background-repeat: no-repeat;
+  }
+    .profile-title{
+        margin-bottom: 30px;
+    }
+    .profile-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+  .profile-item li{
+    margin-bottom: 38px;
+    flex: 0 0 48%;
+  }
+  a {
+    width: 194px;
+    height: 42px;
+  }
+
+}
+@media (min-width 1440px) {
+  .intro{
+    background-image: url(../img/picture-desk.png);
+    background-repeat: no-repeat;
+  }
+}
+
