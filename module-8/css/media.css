@@ -1,7 +1,16 @@
+
+@media (max-width 767px){
+  
+}
+
 @media (min-width 768px) {
+  .virtual-header{
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .intro{
-    background-image: url(../img/picture-tab.png);
-    background-repeat: no-repeat;
+   min-height: 700px;
+   height: 100%;
   }
     .profile-title{
         margin-bottom: 30px;
@@ -23,9 +32,9 @@
 
 }
 @media (min-width 1440px) {
-  .intro{
-    background-image: url(../img/picture-desk.png);
-    background-repeat: no-repeat;
+  .profile-list{
+display: flex;
+
   }
 }
 

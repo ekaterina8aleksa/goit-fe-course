@@ -309,16 +309,17 @@ width:280px;
   opacity: 0;
   transition-duration: 0.2s;
 }
-.overlay:hover{
-opacity: 1;
-box-shadow: 10px 10px var(--color-mint);
-cursor: pointer;
-}
 .overlay-team:hover{
   cursor: pointer;
   transform: translate(-10px, -10px);
   transition: 0.2s linear;
 }
+.overlay-team:hover .overlay{
+opacity: 1;
+box-shadow: 10px 10px var(--color-mint);
+cursor: pointer;
+}
+
   .overlay-list-icons{
     display: flex;
     cursor: pointer;
