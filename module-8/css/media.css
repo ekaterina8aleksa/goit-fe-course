@@ -1,12 +1,7 @@
 
 @media (min-width 768px) {
   .container{
-    min-width: 670px;
-    margin: 0 auto;
-  
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    width: 670px;
   }
   .virtual-header{
     display: flex;
@@ -55,13 +50,7 @@
     padding-right: 15px;
     text-align: center;
   }
-  .virtual-header{
-    display: flex;
-    flex-direction: row-reverse;
-    width:940px;
-    /*height: 80px;
-    margin-bottom: 142px;*/
-  }
+  
   .wrap{
     width: 500px;
     }

@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    overflow-x: auto;
+    /*overflow-x: auto;*/
   }
   * {
     margin: 0px;
@@ -25,7 +25,7 @@ html {
   .visually-hidden:not(:focus):not(:active),
   input[type="checkbox"].visually-hidden,
   input[type="radio"].visually-hidden {
-   /* position: absolute;*/
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -79,10 +79,8 @@ button{
     background:none;
 }
 .container{
-  min-width:290px;
+  width:290px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   text-align: center;
 }
 
@@ -92,18 +90,17 @@ button{
   background: no-repeat url("../img/picture-desk.png") center top;
   background-color:rgb(26,25,21);
   min-height: 540px;
-  height: 100%;
+  height: 100vw;
 object-fit: cover;
+background-size: cover;
 }
 .virtual-header{
-  width: 100%;
-
+  width: 100vw;
   margin-bottom: 38px;
 display: flex;
 justify-content: center;
 }
 .wrap{
-
 margin-right: auto;
 margin-left: auto;
 padding-left: 15px;
@@ -221,3 +218,70 @@ margin-bottom: 16px;
     margin-top: 26px;
 border:2px solid  var(--c-coral);
 }
+
+ /*MEDIA*/
+
+@media (min-width 768px) {
+  .container{
+    width: 670px;
+  }
+  .virtual-header{
+    display: flex;
+    flex-direction: row-reverse;
+    width:680px ;
+    height: 80px;
+    margin-bottom: 60px;
+   
+  }
+  .header-title{
+    padding-top: 0px;
+    }
+  .intro{
+   min-height: 700px;
+   height: 100%;
+  }
+  .wrap{
+  
+    margin-bottom: 150px;
+    }
+    .profile-title{
+        margin-bottom: 30px;
+    }
+    .profile-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+  .profile-item li{
+    margin-bottom: 38px;
+    flex: 0 0 48%;
+  }
+  a {
+    width: 194px;
+    height: 42px;
+  }
+
+}
+@media (min-width 1440px) {
+  .container{
+    min-width: 944px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+  
+  .wrap{
+    width: 500px;
+    }
+  .profile-list{
+display: flex;
+flex-direction: row;
+  }
+.icon-tube/*li*/{
+  order:1;
+}
+}
+
