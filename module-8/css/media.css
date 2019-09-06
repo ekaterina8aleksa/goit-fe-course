@@ -1,20 +1,20 @@
 
-
-
 @media (min-width 768px) {
   .container{
-    min-width: 492px;
+    min-width: 670px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   .virtual-header{
     display: flex;
     flex-direction: row-reverse;
     width:680px ;
     height: 80px;
-    margin-bottom: 142px;
+    margin-bottom: 60px;
+   
   }
   .header-title{
     padding-top: 0px;
@@ -24,7 +24,7 @@
    height: 100%;
   }
   .wrap{
-    width: 492px;
+  
     margin-bottom: 150px;
     }
     .profile-title{
