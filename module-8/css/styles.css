@@ -44,7 +44,7 @@ html {
     font-size: 14px;
     font-family:var(--f-monts);
     display: inline-block;
-    width: 250px;
+    width: 280px;
   height: 42px;
   text-align: center;
   border-radius: 20px;
@@ -79,7 +79,7 @@ button{
     background:none;
 }
 .container{
-  width:290px;
+  width:320px;
   margin: 0 auto;
   text-align: center;
 }
@@ -90,32 +90,28 @@ button{
   background: no-repeat url("../img/picture-desk.png") center top;
   background-color:rgb(26,25,21);
   min-height: 540px;
-  height: 100vw;
+  height: 100vh;
 object-fit: cover;
 background-size: cover;
 }
 .virtual-header{
   width: 100vw;
-  margin-bottom: 38px;
-display: flex;
-justify-content: center;
-}
-.wrap{
-margin-right: auto;
-margin-left: auto;
-padding-left: 15px;
-padding-right: 15px;
-text-align: center;
-margin-bottom: 138px;
+  
+ margin-bottom: 38px;
 
 }
+
 .registration{
-
-/*display: flex;
-justify-content: space-between;*/
+width: 180px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 90px;
+padding-top: 18px;
+margin-left: auto;
+margin-right: auto;
 }
 .header-title{
-/*padding-top: 116px;*/
+
 }
   .logo {
     display: flex;
@@ -125,6 +121,7 @@ justify-content: space-between;*/
     align-items: center;
     margin: 0 auto;
     text-transform: uppercase;
+    justify-content: center;
   } 
 .sign-up{
 border-radius: 20px;
@@ -141,6 +138,7 @@ margin-bottom: 16px;
     color: var(--c-white);
     font-size: 18px;
     margin-bottom: 16px;
+    padding: 0 48px;
 }
 .holiday-partner{
     color: var(--c-white);
@@ -149,22 +147,20 @@ margin-bottom: 16px;
 
   /*PROFILES*/
 
-  .profile{
-    padding-top:70px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
-  }
+  
   .profile-title{
+    margin-top: 70px;
     margin-bottom: 16px;
 }
   .profile-list{
-    text-align: center;
-    display: block;
+  
   }
   .profile-item{
-    margin-bottom: 28px;
+    margin: 0 auto;
     width: 235px;
+  }
+  .profile-item:not(:last-child){
+    margin-bottom: 28px;
   }
   .avatar{
     position: relative;
@@ -216,6 +212,7 @@ margin-bottom: 16px;
     color:var(--c-coral);
     background-color: var(--c-white);
     margin-top: 26px;
+    margin-bottom: 56px;
 border:2px solid  var(--c-coral);
 }
 
@@ -234,8 +231,13 @@ border:2px solid  var(--c-coral);
    
   }
   .header-title{
+    
     padding-top: 0px;
     }
+    .title{
+      font-size: 52px;
+      
+      }
   .intro{
    min-height: 700px;
    height: 100%;
@@ -252,6 +254,7 @@ border:2px solid  var(--c-coral);
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 492px;
         
     }
   .profile-item li{
@@ -267,10 +270,7 @@ border:2px solid  var(--c-coral);
 @media (min-width 1440px) {
   .container{
     min-width: 944px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
+
   }
   
   .wrap{
@@ -279,6 +279,7 @@ border:2px solid  var(--c-coral);
   .profile-list{
 display: flex;
 flex-direction: row;
+width: 100%;
   }
 .icon-tube/*li*/{
   order:1;
