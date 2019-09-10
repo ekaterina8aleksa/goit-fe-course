@@ -1,65 +1,149 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .profile-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  .profile-list {
+    width: 80%;
+  }
+  .registration {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .other-partner {
+    margin-top: 26px;
+    margin-bottom: 56px;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  .text {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .profile-title {
+    margin-bottom: 16px;
+  }
+}
 
-@media (min-width 768px) {
-  .container{
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container {
     width: 670px;
   }
-  .virtual-header{
+  .virtual-header {
     display: flex;
     flex-direction: row-reverse;
-    width:680px ;
-    height: 80px;
-    margin-bottom: 60px;
-   
+    margin-bottom: 40px;
+    justify-content: space-between;
+    padding-top: 38px;
   }
-  .header-title{
-    padding-top: 0px;
-    }
-  .intro{
-   min-height: 700px;
-   height: 100%;
+  .title {
+    font-size: 52px;
+    margin-bottom: 36px;
   }
-  .wrap{
-  
-    margin-bottom: 150px;
-    }
-    .profile-title{
-        margin-bottom: 30px;
-    }
-    .profile-list{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        
-    }
-  .profile-item li{
-    margin-bottom: 38px;
-    flex: 0 0 48%;
+  .text {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .intro {
+    min-height: 700px;
+    height: 100vh;
+  }
+  .intro-part {
+    width: 520px;
+  }
+  .profile-title {
+    margin-bottom: 34px;
+  }
+  .profile-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .profile-item {
+    width: 45%;
+    margin: 0 auto 58px auto;
   }
   a {
-    width: 194px;
+    width: 236px;
     height: 42px;
   }
-
+  .other-partner {
+    margin: 38px auto;
+  }
+  .profile-item:nth-child(1) {
+    order: 0;
+  }
+  .profile-item:nth-child(2) {
+    order: 2;
+  }
+  .profile-item:nth-child(3) {
+    order: 1;
+  }
+  .profile-item:nth-child(4) {
+    order: 3;
+  }
+  .profile-item:nth-last-child(odd) {
+    margin-bottom: 0px;
+  }
 }
-@media (min-width 1440px) {
-  .container{
-    min-width: 944px;
+
+@media (min-width: 1440px) {
+  .container {
+    width: 944px;
+  }
+  .profile-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
   }
-  
-  .wrap{
-    width: 500px;
-    }
-  .profile-list{
-display: flex;
-flex-direction: row;
+  .virtual-header {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    padding-top: 38px;
   }
-.icon-tube/*li*/{
-  order:1;
-}
-}
+  .intro-part {
+    width: 520px;
+  }
+  .title {
+    font-size: 52px;
+    margin-bottom: 36px;
+  }
+  .text {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .profile-title {
+    margin-bottom: 34px;
+  }
+  .profile-item {
+    margin-bottom: 32px;
+    width: 20%;
+    margin: 0 auto;
+  }
+  .profile-item:nth-child(1) {
+    order: 0;
+  }
+  .profile-item:nth-child(2) {
+    order: 2;
+  }
+  .profile-item:nth-child(3) {
+    order: 1;
+  }
+  .profile-item:nth-child(4) {
+    order: 3;
+  }
 
+  .other-partner {
+    margin-top: 34px;
+    margin-bottom: 72px;
+  }
+}
