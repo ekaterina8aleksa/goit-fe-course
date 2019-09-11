@@ -67,6 +67,8 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+  border: 2px solid var(--c-white);
+  border-radius: 50%;
 }
 button {
   font-family: var(--f-monts);
@@ -129,10 +131,14 @@ button {
   font-size: 30px;
   color: var(--c-white);
   margin-bottom: 16px;
+  font-size: 30px;
+  margin-bottom: 16px;
 }
 .text {
   color: var(--c-white);
   padding: 0 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 .holiday-partner {
   color: var(--c-white);
@@ -143,15 +149,20 @@ button {
 
 .profile-title {
   margin-top: 70px;
+  margin-bottom: 16px;
 }
 .profile-list {
   display: inline-block;
+  width: 80%;
 }
 .profile-item {
   max-width: 234px;
   margin: 0 auto;
   padding: 0 15px;
   text-align: center;
+}
+.profile-item:not(:last-child) {
+  margin-bottom: 28px;
 }
 .avatar {
   position: relative;
@@ -202,6 +213,8 @@ button {
   color: var(--c-coral);
   background-color: var(--c-white);
   border: 2px solid var(--c-coral);
+  margin-top: 26px;
+  margin-bottom: 56px;
 }
 
 
