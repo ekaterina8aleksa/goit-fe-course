@@ -1,0 +1,69 @@
+@media (max-width: 767px) {
+  .registration {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 100px;
+    padding-top: 38px;
+  }
+  .title {
+    font-size: 52px;
+    margin-bottom: 36px;
+  }
+  .text {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .intro {
+    min-height: 700px;
+    height: 100vh;
+  }
+  .intro-part {
+    width: 600px;
+  }
+  .profile-title {
+    margin-bottom: 34px;
+  }
+  .profile-item {
+    margin: 0 auto 58px auto;
+  }
+  a {
+    width: 236px;
+    height: 42px;
+  }
+  .other-partner {
+    margin: 38px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  /*.header {
+    margin-bottom:100px;
+    padding-top: 38px;
+  }*/
+  .intro-part {
+    width: 600px;
+  }
+  .title {
+    font-size: 52px;
+    margin-bottom: 36px;
+  }
+  .text {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .profile-title {
+    margin-bottom: 34px;
+  }
+  .profile-item {
+    margin-bottom: 32px;
+    margin: 0 auto;
+  }
+  .other-partner {
+    margin-top: 34px;
+    margin-bottom: 72px;
+  }
+}
