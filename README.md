@@ -41,3 +41,10 @@ https://github.com/ekaterina8aleksa/goit-fe-course/tree/master/module-8
 
 рабочая 8 
 https://ekaterina8aleksa.github.io/goit-fe-course/module-8/index.html
+
+файлы 9 
+https://github.com/ekaterina8aleksa/goit-fe-course/tree/master/module-9
+
+рабочая 9 
+https://ekaterina8aleksa.github.io/goit-fe-course/module-9/index.html
+
