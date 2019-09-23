@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Module-6</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+      <link rel="stylesheet" href="css/main.css" />
+    <title>Module-10</title>
   </head>
   <body>
 
     <!--HEADER-->
-
-    <header>
+    
+<div class="introduction">
+    <header class="site__header">
       <div class=" container head-wrap">
-        <h1><a class="logo" href="#">MoGo</a></h1>
-        <nav>
-          <ul class="menu-nav ">
-            <li class="menu-item"><a href="#" class="nav-link">about</a></li>
-            <li class="menu-item"><a href="#" class="nav-link">service</a></li>
-            <li class="menu-item"><a href="#" class="nav-link">work</a></li>
-            <li class="menu-item"><a href="#" class="nav-link">blog</a></li>
-            <li class="menu-item"><a href="#" class="nav-link">contact</a></li>  
+        <h1><a class="link logo" href="#">MoGo</a></h1>
+        <nav class="navigation">
+          <ul class="list nav__menu">
+            <li class="site__nav--item"><a href="#" class="link site__nav--link">about</a></li>
+            <li class="site__nav--item"><a href="#" class="link site__nav--link">service</a></li>
+            <li class="site__nav--item"><a href="#" class="link site__nav--link">work</a></li>
+            <li class="site__nav--item"><a href="#" class="link site__nav--link">blog</a></li>
+            <li class="site__nav--item"><a href="#" class="link site__nav--link">contact</a></li>
+            <li class="site__nav--item"><a href="#" class="link">
+              <svg class="site__nav--icon" width="15px" height="15px">
+                <use href="img/icons/nav/nav-sprite.svg#icon-cart"></use></svg>
+            </a></li> 
+            <li class="site__nav--item"><a href="#" class="link">
+                <svg class="site__nav--icon" width="15px" height="15px">
+                  <use href="img/icons/nav/nav-sprite.svg#icon-search"></use></svg>
+              </a></li> 
           </ul>
         </nav>
       </div>
     </header>
+
+    <section>
+      <div class="container intro-container">
+        <h2 class="title intro-title ">
+          <span>Creative Template</span>welcome to mogo
+        </h2>
+        <a href="#" class="link additional">Learn More</a>
+      </div>
+    </section>
+
+  </div>
+
 
       <!--SERVICE-->
 
@@ -33,7 +55,7 @@
           <h2 class="title service-position ">
             <span>We work with</span>amazing services
           </h2>
-          <ul class="service-list">
+          <ul class="list service-list">
             <li class="service-item">
               <div class="service-wrap">
                 <h3 class="small-title">photography</h3>
@@ -108,36 +130,46 @@
               labore temporibus!
             </p>
           </div>
-          <ul class="team-list">
+          <ul class="list team-list">
             <li class="team-item">
               <div class="overlay-team">
                 <div class="overlay">
-                  <ul class="overlay-list-icons">
+                  <ul class="list overlay-list-icons">
                     <li class="overlay-icon">
-                      <a href="#" class="icon-facebook ">
-                        <span class="visually-hidden">facebook</span>
+                      <a href="#">
+                       <svg>
+                         <use href="img/icons/social/social-sprite.svg#icon-facebook"></use>
+                       </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
-                      <a href="#" class="icon-twitter">
-                        <span class="visually-hidden">twitter</span>
+                      <a href="#">
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-twitter"></use>
+                        </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
-                      <a href="#" class="icon-pinterest">
-                        <span class="visually-hidden">pinterest</span>
+                      <a href="#">
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-pinterest"></use>
+                        </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
-                      <a href="#" class="icon-instagram">
-                        <span class="visually-hidden">instagram</span>
+                      <a href="#">
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-instagram"></use>
+                        </svg>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <img src="img/man-1.png"
+                <img  
+                srcset="img/man1-min.png 380w, img/man1@2x-min.png 760w"
+                sizes="380px"
+                src="img/man1-min.png"
                   alt="A man with glasses"
-                  width="380"
                   height="470"/>
               </div>
               <h3 class="small-title team-name">matthew dix</h3>
@@ -146,32 +178,42 @@
             <li class="team-item">
               <div class="overlay-team">
                 <div class="overlay">
-                  <ul class="overlay-list-icons">
+                  <ul class="list overlay-list-icons">
                     <li class="overlay-icon">
                       <a href="#" class="icon-facebook">
-                        <span class="visually-hidden">facebook</span>
+                       <svg>
+                         <use href="img/icons/social/social-sprite.svg#icon-facebook"></use>
+                       </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
                       <a href="#" class="icon-twitter">
-                        <span class="visually-hidden">twitter</span>
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-twitter"></use>
+                        </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
                       <a href="#" class="icon-pinterest">
-                        <span class="visually-hidden">pinterest</span>
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-pinterest"></use>
+                        </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
                       <a href="#" class="icon-instagram">
-                        <span class="visually-hidden">instagram</span>
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-instagram"></use>
+                        </svg>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <img src="img/man-2.jpg"
+                <img 
+                  srcset="img/man2-min.png 380w, img/man2@2x-min.png 760w"
+                  sizes="380px"
+                  src="img/man2-min.png"
                   alt="A man with a phptocamera"
-                  width="380"
                   height="470"/>
               </div>
               <h3 class="small-title team-name">christopher campbell</h3>
@@ -180,30 +222,40 @@
             <li class="team-item">
               <div class="overlay-team">
                 <div class="overlay">
-                  <ul class="overlay-list-icons">
+                  <ul class="list overlay-list-icons">
                     <li class="overlay-icon">
                       <a href="#" class="icon-facebook">
-                        <span class="visually-hidden">facebook</span>
+                       <svg>
+                         <use href="img/icons/social/social-sprite.svg#icon-facebook"></use>
+                       </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
                       <a href="#" class="icon-twitter">
-                        <span class="visually-hidden">twitter</span>
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-twitter"></use>
+                        </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
                       <a href="#" class="icon-pinterest">
-                        <span class="visually-hidden">pinterest</span>
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-pinterest"></use>
+                        </svg>
                       </a>
                     </li>
                     <li class="overlay-icon">
                       <a href="#" class="icon-instagram">
-                        <span class="visually-hidden">instagram</span>
+                        <svg>
+                          <use href="img/icons/social/social-sprite.svg#icon-instagram"></use>
+                        </svg>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <img src="img/man-3.jpg"
+                <img  srcset="img/man3-min.png 380w, img/man3@2x-min.png 760w"
+                sizes="380px"
+                src="img/man3-min.png"
                   alt="A man with a beard"
                   width="380"
                   height="470"/>
