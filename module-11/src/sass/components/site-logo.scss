@@ -3,3 +3,7 @@
   line-height: 42px;
   font-weight: 700;
 }
+
+&:hover, &:focus {
+  color: $c-yellow;
+}

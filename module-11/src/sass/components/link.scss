@@ -4,4 +4,10 @@
   display: block;
   font-family: $f-monts;
   color: $c-white;
+
+  &--footer {
+    color: $c-pink;
+    display: inline-block;
+  }
+
 }

@@ -1,6 +1,11 @@
 .text {
   font-family: $f-rob;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 24px;
   color: $c-lgray;
+  font-weight: 400;
+
+  &--footer {
+    font-family: $f-monts;
+  }
 }

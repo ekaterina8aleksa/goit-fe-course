@@ -1,0 +1,28 @@
+.introduction {
+  position: relative;
+  background: url('../img/bgimg-min.png ') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+  margin-bottom: 50px;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from($lg-yellow),
+      to($lg-pink) ; background-image: -o-linear-gradient(
+          bottom,
+          $lg-yellow,
+          $lg-pink
+        ) ; background-image: linear-gradient(to top, $lg-yellow, $lg-pink)
+    );
+    width: 100%;
+    min-height: 1000px;
+    z-index: 1;
+  }
+}

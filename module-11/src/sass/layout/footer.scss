@@ -1,0 +1,41 @@
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: 1px solid $lg-lgray;
+}
+
+.footer__form-input {
+  color: $c-dgray;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $f-rob;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0px 140px 0px 10px;
+  opacity: 0.5;
+  border: none;
+}
+
+.page-footer::before {
+  background-color: $c-lgray;
+  display: block;
+  content: '';
+  margin: 2px auto;
+  height: 1px;
+  width: 80%;
+  opacity: 0.5;
+}
