@@ -1,8 +1,11 @@
 .introduction {
   position: relative;
-  background: url('../img/bgimg-min.png ') no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url('../../images/bgimg-min.png');
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
   min-height: 1000px;
   margin-bottom: 50px;
 
@@ -15,12 +18,10 @@
       left bottom,
       left top,
       from($lg-yellow),
-      to($lg-pink) ; background-image: -o-linear-gradient(
-          bottom,
-          $lg-yellow,
-          $lg-pink
-        ) ; background-image: linear-gradient(to top, $lg-yellow, $lg-pink)
+      to($lg-pink)
     );
+    background-image: -o-linear-gradient(bottom, $lg-yellow 0%, $lg-pink 100%);
+    background-image: linear-gradient(to top, $lg-yellow 0%, $lg-pink 100%);
     width: 100%;
     min-height: 1000px;
     z-index: 1;

@@ -2,8 +2,9 @@
   font-size: 30px;
   line-height: 42px;
   font-weight: 700;
+
+  &:hover, &:focus {
+    color: $c-yellow;
+  }
 }
 
-&:hover, &:focus {
-  color: $c-yellow;
-}
