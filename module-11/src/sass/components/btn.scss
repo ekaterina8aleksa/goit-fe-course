@@ -1,11 +1,12 @@
 .btn {
-  font-size: 14px;
+  font-size: 14px; 
   font-weight: 700;
   font-family: $f-monts;
   color: $c-white;
-  cursor: pointer;
+  cursor: pointer; 
   text-transform: uppercase;
   text-align: center;
+
 
   &--intro {
     background-color: transparent;
@@ -27,5 +28,10 @@
     background-color: $c-mint;
     padding: 10px 30px;
     border: none;
+
+    &:hover,
+    &:focus {
+      color: $c-yellow;
+    }
   }
 }

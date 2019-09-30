@@ -16,10 +16,6 @@
     height: 20px;
     fill: $c-white;
 
-    &:hover,
-    &:focus {
-      fill: $c-yellow;
-    }
   }
 
   &--link {
@@ -35,6 +31,11 @@
     &:hover,
     &:focus {
       color: $c-yellow;
+    }
+
+    &:hover svg,
+    &:focus svg{
+      fill: $c-yellow;
     }
 
     &::after {

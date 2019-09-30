@@ -659,7 +659,7 @@ input[type='radio'].visually-hidden {
 
 .wrap--intro {
   width: 820px;
-  top: 20%;
+  top: 15%;
   left: 20%;
   flex-direction: column;
 }
@@ -710,11 +710,6 @@ input[type='radio'].visually-hidden {
   fill: white;
 }
 
-.header__nav--icon:hover,
-.header__nav--icon:focus {
-  fill: #fce38a;
-}
-
 .header__nav--link {
   font-size: 14px;
   font-weight: 400;
@@ -729,6 +724,11 @@ input[type='radio'].visually-hidden {
 .header__nav--link:hover,
 .header__nav--link:focus {
   color: #fce38a;
+}
+
+.header__nav--link:hover svg,
+.header__nav--link:focus svg {
+  fill: #fce38a;
 }
 
 .header__nav--link::after {
@@ -775,6 +775,11 @@ input[type='radio'].visually-hidden {
   background-color: #95e1d3;
   padding: 10px 30px;
   border: none;
+}
+
+.btn--footer:hover,
+.btn--footer:focus {
+  color: #fce38a;
 }
 
 .text {
@@ -845,7 +850,7 @@ input[type='radio'].visually-hidden {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 470px;
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%);
   opacity: 0;
   transition-duration: 0.2s;
@@ -871,8 +876,8 @@ input[type='radio'].visually-hidden {
   background-color: #f38181;
 }
 
-.overlay__icon:hover .service__icon--tools,
-.overlay__icon:focus .service__icon--tools {
+.overlay__icon:hover svg,
+.overlay__icon:focus svg {
   fill: white;
 }
 
